@@ -9,6 +9,9 @@ import { properties } from "@/data/properties";
 import heroBg from "@/assets/hero-bg.jpg";
 import michealImg from "@/assets/micheal-ojimadu.jpg";
 import adonisImg from "@/assets/adonis-peterz.jpg";
+import investment1 from "@/assets/investment-1.png";
+import investment2 from "@/assets/investment-2.png";
+import investment3 from "@/assets/investment-3.png";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -143,6 +146,111 @@ const Index = () => {
               </Button>
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* Featured Investment Opportunities */}
+      <section className="py-20 bg-secondary">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={stagger}
+            className="text-center mb-14"
+          >
+            <motion.p variants={fadeUp} className="text-accent tracking-[0.2em] uppercase text-sm font-medium mb-2">
+              Exclusive Deals
+            </motion.p>
+            <motion.h2 variants={fadeUp} className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Featured Investment Opportunities
+            </motion.h2>
+            <motion.p variants={fadeUp} className="text-muted-foreground max-w-2xl mx-auto">
+              Premium land and development opportunities for serious investors and developers
+            </motion.p>
+          </motion.div>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={stagger}
+            className="grid grid-cols-1 lg:grid-cols-3 gap-8"
+          >
+            {[
+              {
+                image: investment1,
+                title: "Joint Venture Development Opportunity – Chevron Alternative Route",
+                description: "Prime joint venture opportunity located directly along the Chevron alternative route. This property is ideal for a terrace development project. The title document is Governor's Consent, providing strong legal security for investors and developers. Other agreement terms are open for discussion. Perfect for smart developers ready for immediate development.",
+                highlights: [
+                  { label: "Title", value: "Governor's Consent" },
+                  { label: "Type", value: "Joint Venture" },
+                  { label: "Use", value: "Terrace Development" },
+                ],
+              },
+              {
+                image: investment3,
+                title: "Premium Development Land – Lekki Beach Road, Igbarra",
+                description: "A premium 5-plot property strategically located in a well-developed and highly desirable area of Lekki Beach Road, Igbarra. This direct brief offering is suitable for terraces or block of flats development.",
+                highlights: [
+                  { label: "Size", value: "5 Plots" },
+                  { label: "Price", value: "₦350M / plot" },
+                  { label: "Premium", value: "₦100 Million" },
+                ],
+              },
+              {
+                image: investment2,
+                title: "Joint Venture Land – Opposite Mayfair Gardens, Awoyaya",
+                description: "Strategically positioned mixed-use development land located opposite Mayfair Gardens, Awoyaya. Suitable for both commercial and residential projects. Total Area: 3,382.659 sqm (as indicated in survey). Available as a direct brief for capable developers seeking a structured joint venture opportunity.",
+                highlights: [
+                  { label: "Area", value: "3,382.659 sqm" },
+                  { label: "Type", value: "Mixed-Use" },
+                  { label: "Brief", value: "Direct" },
+                ],
+              },
+            ].map((item) => (
+              <motion.div
+                key={item.title}
+                variants={fadeUp}
+                className="bg-card rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow border border-border"
+              >
+                <div className="aspect-[4/3] overflow-hidden bg-muted">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="font-display text-lg font-bold text-card-foreground mb-3 leading-snug">
+                    {item.title}
+                  </h3>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {item.highlights.map((h) => (
+                      <span
+                        key={h.label}
+                        className="text-xs bg-accent/10 text-accent font-semibold px-3 py-1 rounded-full"
+                      >
+                        {h.label}: {h.value}
+                      </span>
+                    ))}
+                  </div>
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-6">
+                    {item.description}
+                  </p>
+                  <a
+                    href="https://wa.me/234919945833"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button className="w-full bg-gradient-gold text-primary font-semibold hover:opacity-90 transition-opacity">
+                      Enquire Now
+                      <ArrowRight className="ml-2 w-4 h-4" />
+                    </Button>
+                  </a>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
         </div>
       </section>
 
