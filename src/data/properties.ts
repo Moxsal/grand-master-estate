@@ -4,6 +4,11 @@ import property3 from "@/assets/property-3.jpg";
 import property4 from "@/assets/property-4.jpg";
 import property5 from "@/assets/property-5.jpg";
 import property6 from "@/assets/property-6.jpg";
+import luxuryAptBalcony from "@/assets/luxury-apt-balcony.jpg";
+import luxuryAptBedroom from "@/assets/luxury-apt-bedroom.jpg";
+import luxuryAptBath1 from "@/assets/luxury-apt-bath1.jpg";
+import luxuryAptBath2 from "@/assets/luxury-apt-bath2.jpg";
+import luxuryAptKitchen from "@/assets/luxury-apt-kitchen.jpg";
 
 export interface Property {
   id: string;
@@ -16,6 +21,7 @@ export interface Property {
   bathrooms: number;
   area: string;
   image: string;
+  gallery?: string[];
   description: string;
   amenities: string[];
   featured: boolean;
@@ -111,5 +117,21 @@ export const properties: Property[] = [
     description: "A beautiful semi-detached duplex in a serene environment. Features modern finishes, spacious rooms, and a family-friendly neighborhood.",
     amenities: ["Garden", "Parking", "Security", "Boys' Quarters", "Water Treatment"],
     featured: false,
+  },
+  {
+    id: "7",
+    title: "Executive High-Rise Apartment",
+    location: "Eko Atlantic City, Lagos",
+    price: "₦450,000,000",
+    priceValue: 450000000,
+    type: "Apartment",
+    bedrooms: 3,
+    bathrooms: 3,
+    area: "280 sqm",
+    image: luxuryAptBalcony,
+    gallery: [luxuryAptBalcony, luxuryAptBedroom, luxuryAptBath1, luxuryAptBath2, luxuryAptKitchen],
+    description: "An exceptional high-rise residence offering panoramic waterfront views from floor-to-ceiling glass panels. This meticulously finished 3-bedroom apartment features premium wood-finish wardrobes with built-in organizers, a designer kitchen with modern cabinetry, and luxury bathrooms with mosaic tile accents and glass-enclosed showers. Ideal for discerning professionals and investors seeking a prestigious address in Lagos's most iconic waterfront development.",
+    amenities: ["Panoramic Views", "Built-in Wardrobes", "Designer Kitchen", "Premium Bathrooms", "Balcony", "24/7 Security", "Concierge", "Parking"],
+    featured: true,
   },
 ];
