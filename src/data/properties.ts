@@ -9,6 +9,12 @@ import luxuryAptBedroom from "@/assets/luxury-apt-bedroom.jpg";
 import luxuryAptBath1 from "@/assets/luxury-apt-bath1.jpg";
 import luxuryAptBath2 from "@/assets/luxury-apt-bath2.jpg";
 import luxuryAptKitchen from "@/assets/luxury-apt-kitchen.jpg";
+import terraceExterior from "@/assets/terrace-exterior.jpg";
+import terraceEntrance from "@/assets/terrace-entrance.jpg";
+import terraceCompound from "@/assets/terrace-compound.jpg";
+import terraceLiving from "@/assets/terrace-living.jpg";
+import terraceLounge from "@/assets/terrace-lounge.jpg";
+import terraceWardrobe from "@/assets/terrace-wardrobe.jpg";
 
 export interface Property {
   id: string;
