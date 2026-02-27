@@ -49,17 +49,34 @@ const PropertyDetail = () => {
           </Link>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {/* Image */}
+            {/* Image & Gallery */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
-              className="rounded-lg overflow-hidden aspect-[4/3]"
+              className="space-y-3"
             >
-              <img
-                src={property.image}
-                alt={property.title}
-                className="w-full h-full object-cover"
-              />
+              <div className="rounded-lg overflow-hidden aspect-[4/3]">
+                <img
+                  src={property.gallery ? property.gallery[activeImage] : property.image}
+                  alt={property.title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              {property.gallery && property.gallery.length > 1 && (
+                <div className="grid grid-cols-5 gap-2">
+                  {property.gallery.map((img, idx) => (
+                    <button
+                      key={idx}
+                      onClick={() => setActiveImage(idx)}
+                      className={`rounded-md overflow-hidden aspect-square border-2 transition-all ${
+                        idx === activeImage ? "border-accent" : "border-transparent opacity-70 hover:opacity-100"
+                      }`}
+                    >
+                      <img src={img} alt={`View ${idx + 1}`} className="w-full h-full object-cover" />
+                    </button>
+                  ))}
+                </div>
+              )}
             </motion.div>
 
             {/* Info */}
