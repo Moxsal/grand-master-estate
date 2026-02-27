@@ -190,11 +190,11 @@ const Index = () => {
               {
                 image: investment3,
                 title: "Premium Development Land – Lekki Beach Road, Igbarra",
-                description: "A premium 5-plot property strategically located in a well-developed and highly desirable area of Lekki Beach Road, Igbarra. This direct brief offering is suitable for terraces or block of flats development.",
+                description: "A premium 5-plot property strategically located in a well-developed and highly desirable area of Lekki Beach Road, Igbarra. This direct brief offering is suitable for terraces or block of flats development. An excellent opportunity for investors seeking high-return residential development.",
                 highlights: [
                   { label: "Size", value: "5 Plots" },
-                  { label: "Price", value: "₦350M / plot" },
-                  { label: "Premium", value: "₦100 Million" },
+                  { label: "Type", value: "Direct Brief" },
+                  { label: "Use", value: "Terraces / Flats" },
                 ],
               },
               {

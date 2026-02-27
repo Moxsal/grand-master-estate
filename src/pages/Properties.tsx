@@ -78,18 +78,6 @@ const Properties = () => {
                 <SelectItem value="Land">Land</SelectItem>
               </SelectContent>
             </Select>
-            <Select value={priceFilter} onValueChange={setPriceFilter}>
-              <SelectTrigger className="w-full md:w-48">
-                <SelectValue placeholder="Price Range" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="all">All Prices</SelectItem>
-                <SelectItem value="under100">Under ₦100M</SelectItem>
-                <SelectItem value="100-300">₦100M - ₦300M</SelectItem>
-                <SelectItem value="300-500">₦300M - ₦500M</SelectItem>
-                <SelectItem value="500+">Above ₦500M</SelectItem>
-              </SelectContent>
-            </Select>
             <Select value={bedroomFilter} onValueChange={setBedroomFilter}>
               <SelectTrigger className="w-full md:w-48">
                 <SelectValue placeholder="Bedrooms" />
