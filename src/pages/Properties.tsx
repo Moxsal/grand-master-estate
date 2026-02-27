@@ -31,7 +31,7 @@ const Properties = () => {
         (bedroomFilter === "5+" && p.bedrooms >= 5);
       return matchesSearch && matchesType && matchesBedrooms;
     });
-  }, [searchQuery, typeFilter, priceFilter, bedroomFilter]);
+  }, [searchQuery, typeFilter, bedroomFilter]);
 
   return (
     <div className="min-h-screen bg-background">
