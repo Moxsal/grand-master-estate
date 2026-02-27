@@ -16,7 +16,6 @@ const fadeUp = {
 const Properties = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [typeFilter, setTypeFilter] = useState("all");
-  const [priceFilter, setPriceFilter] = useState("all");
   const [bedroomFilter, setBedroomFilter] = useState("all");
 
   const filteredProperties = useMemo(() => {
