@@ -102,7 +102,7 @@ const PropertyDetail = () => {
                 {property.location}
               </div>
 
-              <p className="text-3xl md:text-4xl font-bold text-accent mb-6">{property.price}</p>
+              <p className="text-xl md:text-2xl font-semibold text-accent mb-6">{property.price}</p>
 
               <div className="flex items-center gap-6 mb-6 text-muted-foreground">
                 {property.bedrooms > 0 && (
