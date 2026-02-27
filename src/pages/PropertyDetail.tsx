@@ -6,8 +6,6 @@ import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { properties } from "@/data/properties";
-import Footer from "@/components/Footer";
-import { properties } from "@/data/properties";
 
 const PropertyDetail = () => {
   const { id } = useParams();
