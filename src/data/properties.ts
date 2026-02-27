@@ -9,6 +9,12 @@ import luxuryAptBedroom from "@/assets/luxury-apt-bedroom.jpg";
 import luxuryAptBath1 from "@/assets/luxury-apt-bath1.jpg";
 import luxuryAptBath2 from "@/assets/luxury-apt-bath2.jpg";
 import luxuryAptKitchen from "@/assets/luxury-apt-kitchen.jpg";
+import terraceExterior from "@/assets/terrace-exterior.jpg";
+import terraceEntrance from "@/assets/terrace-entrance.jpg";
+import terraceCompound from "@/assets/terrace-compound.jpg";
+import terraceLiving from "@/assets/terrace-living.jpg";
+import terraceLounge from "@/assets/terrace-lounge.jpg";
+import terraceWardrobe from "@/assets/terrace-wardrobe.jpg";
 
 export interface Property {
   id: string;
@@ -132,6 +138,22 @@ export const properties: Property[] = [
     gallery: [luxuryAptBalcony, luxuryAptBedroom, luxuryAptBath1, luxuryAptBath2, luxuryAptKitchen],
     description: "An exceptional high-rise residence offering panoramic waterfront views from floor-to-ceiling glass panels. This meticulously finished 3-bedroom apartment features premium wood-finish wardrobes with built-in organizers, a designer kitchen with modern cabinetry, and luxury bathrooms with mosaic tile accents and glass-enclosed showers. Ideal for discerning professionals and investors seeking a prestigious address in Lagos's most iconic waterfront development.",
     amenities: ["Panoramic Views", "Built-in Wardrobes", "Designer Kitchen", "Premium Bathrooms", "Balcony", "24/7 Security", "Concierge", "Parking"],
+    featured: true,
+  },
+  {
+    id: "8",
+    title: "Contemporary Terrace Duplex – Sold",
+    location: "Lekki, Lagos",
+    price: "SOLD",
+    priceValue: 0,
+    type: "Residential",
+    bedrooms: 4,
+    bathrooms: 4,
+    area: "350 sqm",
+    image: terraceExterior,
+    gallery: [terraceExterior, terraceEntrance, terraceLounge, terraceLiving, terraceWardrobe, terraceCompound],
+    description: "A masterfully crafted 4-bedroom contemporary terrace duplex delivered to the highest standards of modern living. This completed development showcases bold architectural lines, premium interior finishes, and meticulous attention to detail — from the designer pop ceilings with ambient LED lighting and marble-effect accent walls, to the bespoke walk-in wardrobe with full-length mirror panelling. The spacious living areas feature polished porcelain floors, expansive windows for natural light, and a well-proportioned compound with private parking. This unit has been successfully sold, demonstrating the quality and market confidence behind Best Grandmaster Realty developments.",
+    amenities: ["Designer Pop Ceiling", "Walk-in Wardrobe", "Marble Accent Wall", "Private Compound", "Ambient Lighting", "Premium Tiling", "Secure Entry", "Landscaped Frontage"],
     featured: true,
   },
 ];
