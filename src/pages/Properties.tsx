@@ -30,13 +30,7 @@ const Properties = () => {
         (bedroomFilter === "1-2" && p.bedrooms >= 1 && p.bedrooms <= 2) ||
         (bedroomFilter === "3-4" && p.bedrooms >= 3 && p.bedrooms <= 4) ||
         (bedroomFilter === "5+" && p.bedrooms >= 5);
-      const matchesPrice =
-        priceFilter === "all" ||
-        (priceFilter === "under100" && p.priceValue < 100000000) ||
-        (priceFilter === "100-300" && p.priceValue >= 100000000 && p.priceValue <= 300000000) ||
-        (priceFilter === "300-500" && p.priceValue > 300000000 && p.priceValue <= 500000000) ||
-        (priceFilter === "500+" && p.priceValue > 500000000);
-      return matchesSearch && matchesType && matchesBedrooms && matchesPrice;
+      return matchesSearch && matchesType && matchesBedrooms;
     });
   }, [searchQuery, typeFilter, priceFilter, bedroomFilter]);
 
