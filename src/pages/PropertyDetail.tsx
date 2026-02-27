@@ -1,8 +1,11 @@
+import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Bed, Bath, Maximize, MapPin, Phone, ArrowLeft, Share2, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import { properties } from "@/data/properties";
 import Footer from "@/components/Footer";
 import { properties } from "@/data/properties";
 
