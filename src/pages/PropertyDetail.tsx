@@ -61,7 +61,7 @@ const PropertyDetail = () => {
                 />
               </div>
               {property.gallery && property.gallery.length > 1 && (
-                <div className="grid grid-cols-5 gap-2">
+                <div className="grid grid-cols-5 sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-5 gap-2">
                   {property.gallery.map((img, idx) => (
                     <button
                       key={idx}
@@ -102,7 +102,7 @@ const PropertyDetail = () => {
                 {property.location}
               </div>
 
-              <p className="text-3xl md:text-4xl font-bold text-accent mb-6">{property.price}</p>
+              <p className="text-xl md:text-2xl font-semibold text-accent mb-6">{property.price}</p>
 
               <div className="flex items-center gap-6 mb-6 text-muted-foreground">
                 {property.bedrooms > 0 && (

@@ -16,7 +16,6 @@ const fadeUp = {
 const Properties = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [typeFilter, setTypeFilter] = useState("all");
-  const [priceFilter, setPriceFilter] = useState("all");
   const [bedroomFilter, setBedroomFilter] = useState("all");
 
   const filteredProperties = useMemo(() => {
@@ -30,15 +29,9 @@ const Properties = () => {
         (bedroomFilter === "1-2" && p.bedrooms >= 1 && p.bedrooms <= 2) ||
         (bedroomFilter === "3-4" && p.bedrooms >= 3 && p.bedrooms <= 4) ||
         (bedroomFilter === "5+" && p.bedrooms >= 5);
-      const matchesPrice =
-        priceFilter === "all" ||
-        (priceFilter === "under100" && p.priceValue < 100000000) ||
-        (priceFilter === "100-300" && p.priceValue >= 100000000 && p.priceValue <= 300000000) ||
-        (priceFilter === "300-500" && p.priceValue > 300000000 && p.priceValue <= 500000000) ||
-        (priceFilter === "500+" && p.priceValue > 500000000);
-      return matchesSearch && matchesType && matchesBedrooms && matchesPrice;
+      return matchesSearch && matchesType && matchesBedrooms;
     });
-  }, [searchQuery, typeFilter, priceFilter, bedroomFilter]);
+  }, [searchQuery, typeFilter, bedroomFilter]);
 
   return (
     <div className="min-h-screen bg-background">
@@ -83,18 +76,6 @@ const Properties = () => {
                 <SelectItem value="Apartment">Apartment</SelectItem>
                 <SelectItem value="Villa">Villa</SelectItem>
                 <SelectItem value="Land">Land</SelectItem>
-              </SelectContent>
-            </Select>
-            <Select value={priceFilter} onValueChange={setPriceFilter}>
-              <SelectTrigger className="w-full md:w-48">
-                <SelectValue placeholder="Price Range" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="all">All Prices</SelectItem>
-                <SelectItem value="under100">Under ₦100M</SelectItem>
-                <SelectItem value="100-300">₦100M - ₦300M</SelectItem>
-                <SelectItem value="300-500">₦300M - ₦500M</SelectItem>
-                <SelectItem value="500+">Above ₦500M</SelectItem>
               </SelectContent>
             </Select>
             <Select value={bedroomFilter} onValueChange={setBedroomFilter}>

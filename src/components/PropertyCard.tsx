@@ -38,7 +38,7 @@ const PropertyCard = ({ property }: PropertyCardProps) => {
         <h3 className="font-display text-lg font-semibold text-card-foreground mb-2 group-hover:text-accent transition-colors">
           {property.title}
         </h3>
-        <p className="text-2xl font-bold text-accent mb-4">{property.price}</p>
+        <p className="text-lg font-semibold text-accent mb-4">{property.price}</p>
         <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
           {property.bedrooms > 0 && (
             <div className="flex items-center gap-1">
