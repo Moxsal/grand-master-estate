@@ -61,7 +61,7 @@ const PropertyDetail = () => {
                 />
               </div>
               {property.gallery && property.gallery.length > 1 && (
-                <div className="grid grid-cols-5 gap-2">
+                <div className="grid grid-cols-5 sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-5 gap-2">
                   {property.gallery.map((img, idx) => (
                     <button
                       key={idx}
