@@ -4,6 +4,11 @@ import property3 from "@/assets/property-3.jpg";
 import property4 from "@/assets/property-4.jpg";
 import property5 from "@/assets/property-5.jpg";
 import property6 from "@/assets/property-6.jpg";
+import luxuryAptBalcony from "@/assets/luxury-apt-balcony.jpg";
+import luxuryAptBedroom from "@/assets/luxury-apt-bedroom.jpg";
+import luxuryAptBath1 from "@/assets/luxury-apt-bath1.jpg";
+import luxuryAptBath2 from "@/assets/luxury-apt-bath2.jpg";
+import luxuryAptKitchen from "@/assets/luxury-apt-kitchen.jpg";
 
 export interface Property {
   id: string;
@@ -16,6 +21,7 @@ export interface Property {
   bathrooms: number;
   area: string;
   image: string;
+  gallery?: string[];
   description: string;
   amenities: string[];
   featured: boolean;
