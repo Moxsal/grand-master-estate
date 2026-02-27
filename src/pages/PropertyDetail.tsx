@@ -12,6 +12,7 @@ import { properties } from "@/data/properties";
 const PropertyDetail = () => {
   const { id } = useParams();
   const property = properties.find((p) => p.id === id);
+  const [activeImage, setActiveImage] = useState(0);
 
   if (!property) {
     return (
