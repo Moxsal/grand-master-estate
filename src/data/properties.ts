@@ -28,6 +28,21 @@ import story2 from "@/assets/story-2.jpg";
 import story3 from "@/assets/story-3.jpg";
 import story4 from "@/assets/story-4.jpg";
 import story5 from "@/assets/story-5.jpg";
+import propertyExtra1 from "@/assets/property-extra-1.jpg";
+import propertyExtra2 from "@/assets/property-extra-2.jpg";
+import propertyExtra3 from "@/assets/property-extra-3.jpg";
+import propertyExtra4 from "@/assets/property-extra-4.jpg";
+import propertyExtra6 from "@/assets/property-extra-6.jpg";
+import propertyExtra8 from "@/assets/property-extra-8.jpg";
+import propertyExtra9 from "@/assets/property-extra-9.jpg";
+import propertyExtra12 from "@/assets/property-extra-12.jpg";
+import propertyExtra13 from "@/assets/property-extra-13.jpg";
+import propertyExtra132 from "@/assets/property-extra-13-2.jpg";
+import propertyExtra15 from "@/assets/property-extra-15.jpg";
+import propertyExtra16 from "@/assets/property-extra-16.jpg";
+import propertyExtra162 from "@/assets/property-extra-16-2.jpg";
+import propertyExtra17 from "@/assets/property-extra-17.jpg";
+import propertyExtra172 from "@/assets/property-extra-17-2.jpg";
 
 export interface Property {
   id: string;
