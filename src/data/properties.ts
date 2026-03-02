@@ -166,7 +166,7 @@ export const properties: Property[] = [
     bathrooms: 3,
     area: "280 sqm",
     image: propertyNew4,
-    gallery: [propertyNew4],
+    gallery: [propertyNew4, propertyExtra6],
     description: "A charming 3-bedroom detached bungalow that blends heritage-inspired details with contemporary construction standards. The distinctive arched window, brick accent façade, and columned front porch lend warmth and character, while the dark-toned hip roof and well-maintained frontage project solidity and curb appeal — an excellent opportunity for families and investors alike.",
     amenities: ["Arched Window", "Brick Accent Façade", "Columned Porch", "Hip Roof", "Paved Frontage", "Secure Perimeter"],
     featured: false,
