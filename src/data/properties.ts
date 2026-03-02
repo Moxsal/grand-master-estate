@@ -198,7 +198,7 @@ export const properties: Property[] = [
     bathrooms: 5,
     area: "400 sqm",
     image: propertyNew7,
-    gallery: [propertyNew7],
+    gallery: [propertyNew7, story2, story5],
     description: "An imposing 5-bedroom executive residence with a commanding multi-tiered roofline and refined brick-and-render façade. The grand columned portico, ornamental pilasters, and carefully proportioned fenestration project institutional-grade quality. Set within a secured estate with ample frontage — an exceptional acquisition for high-net-worth families and corporate housing portfolios.",
     amenities: ["Multi-Tiered Roof", "Grand Portico", "Ornamental Pilasters", "Brick-and-Render Façade", "Secured Estate", "Ample Frontage"],
     featured: true,
