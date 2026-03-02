@@ -22,6 +22,12 @@ import propertyNew6 from "@/assets/property-new-6.jpg";
 import propertyNew7 from "@/assets/property-new-7.jpg";
 import propertyNew8 from "@/assets/property-new-8.jpg";
 import propertyInterior1 from "@/assets/property-interior-1.jpg";
+import story1 from "@/assets/story-1.jpg";
+import story92 from "@/assets/story-9-2.jpg";
+import story2 from "@/assets/story-2.jpg";
+import story3 from "@/assets/story-3.jpg";
+import story4 from "@/assets/story-4.jpg";
+import story5 from "@/assets/story-5.jpg";
 
 export interface Property {
   id: string;
