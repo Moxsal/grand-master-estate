@@ -18,6 +18,10 @@ import propertyNew2 from "@/assets/property-new-2.jpg";
 import propertyNew3 from "@/assets/property-new-3.jpg";
 import propertyNew4 from "@/assets/property-new-4.jpg";
 import propertyNew5 from "@/assets/property-new-5.jpg";
+import propertyNew6 from "@/assets/property-new-6.jpg";
+import propertyNew7 from "@/assets/property-new-7.jpg";
+import propertyNew8 from "@/assets/property-new-8.jpg";
+import propertyInterior1 from "@/assets/property-interior-1.jpg";
 
 export interface Property {
   id: string;
@@ -91,7 +95,7 @@ export const properties: Property[] = [
     bathrooms: 3,
     area: "220 sqm",
     image: propertyNew1,
-    gallery: [propertyNew1],
+    gallery: [propertyNew1, propertyInterior1],
     description: "A thoughtfully designed 3-bedroom detached bungalow featuring a contemporary façade with clean architectural lines, a covered front porch with statement lighting, and premium exterior finishes. Situated in a well-planned residential enclave, this property combines modern aesthetics with practical living — ideal for families and first-time homeowners seeking quality and value.",
     amenities: ["Covered Porch", "Statement Lighting", "Gated Compound", "Paved Driveway", "Modern Finishes", "Landscaped Garden"],
     featured: true,
@@ -159,5 +163,53 @@ export const properties: Property[] = [
     description: "A sleek and commanding 3-bedroom executive bungalow with a minimalist contemporary design. The crisp white exterior contrasts elegantly with the dark-toned roof, while tall vertical windows and structured symmetry create a refined streetscape presence. Ample private parking, manicured landscaping, and a secure perimeter wall complete this turnkey residence — ideal for professionals and discerning homeowners.",
     amenities: ["Minimalist Design", "Tall Vertical Windows", "Structured Symmetry", "Private Parking", "Manicured Landscaping", "Perimeter Security"],
     featured: false,
+  },
+  {
+    id: "14",
+    title: "Classic Arch-Front Bungalow",
+    location: "Epe, Lagos",
+    price: "Price Available Upon Request",
+    priceValue: 0,
+    type: "Residential",
+    bedrooms: 3,
+    bathrooms: 3,
+    area: "250 sqm",
+    image: propertyNew6,
+    gallery: [propertyNew6],
+    description: "A solidly constructed 3-bedroom bungalow featuring distinctive arched entryways with white columned supports, a textured stone-clad façade, and a dark aluminium hip roof. The covered veranda, steel railing accents, and generous compound provide practical outdoor living space — a dependable choice for families seeking quality craftsmanship and enduring value.",
+    amenities: ["Arched Entryways", "Stone-Clad Façade", "Aluminium Roof", "Covered Veranda", "Steel Railings", "Spacious Compound"],
+    featured: true,
+  },
+  {
+    id: "15",
+    title: "Grand Executive Residence",
+    location: "Ikorodu, Lagos",
+    price: "Price Available Upon Request",
+    priceValue: 0,
+    type: "Residential",
+    bedrooms: 5,
+    bathrooms: 5,
+    area: "400 sqm",
+    image: propertyNew7,
+    gallery: [propertyNew7],
+    description: "An imposing 5-bedroom executive residence with a commanding multi-tiered roofline and refined brick-and-render façade. The grand columned portico, ornamental pilasters, and carefully proportioned fenestration project institutional-grade quality. Set within a secured estate with ample frontage — an exceptional acquisition for high-net-worth families and corporate housing portfolios.",
+    amenities: ["Multi-Tiered Roof", "Grand Portico", "Ornamental Pilasters", "Brick-and-Render Façade", "Secured Estate", "Ample Frontage"],
+    featured: true,
+  },
+  {
+    id: "16",
+    title: "Contemporary White-Finish Bungalow",
+    location: "Bogije, Lagos",
+    price: "Price Available Upon Request",
+    priceValue: 0,
+    type: "Residential",
+    bedrooms: 3,
+    bathrooms: 3,
+    area: "230 sqm",
+    image: propertyNew8,
+    gallery: [propertyNew8],
+    description: "A pristine 3-bedroom bungalow distinguished by its crisp white exterior, dark stone-clad column accents, and clean architectural geometry. The elevated entrance with wide steps, covered porch, and shingle-style charcoal roof create a polished streetscape presence. Situated in a quiet residential corridor — ideal for buyers prioritising modern aesthetics and low-maintenance living.",
+    amenities: ["White Exterior Finish", "Stone Column Accents", "Elevated Entrance", "Covered Porch", "Shingle Roof", "Quiet Location"],
+    featured: true,
   },
 ];
