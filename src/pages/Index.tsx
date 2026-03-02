@@ -33,7 +33,7 @@ const Index = () => {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroBg})` }}
+          style={{ backgroundImage: `url(${propertyNew3})` }}
         />
         <div className="absolute inset-0 bg-gradient-navy opacity-70" />
         <motion.div
