@@ -101,6 +101,7 @@ export const properties: Property[] = [
       terraceWardrobe,
       terraceCompound,
       story1,
+      propertyExtra8,
     ],
     description: "A masterfully crafted 4-bedroom contemporary terrace duplex delivered to the highest standards of modern living. This completed development showcases bold architectural lines, premium interior finishes, and meticulous attention to detail — from the designer pop ceilings with ambient LED lighting and fully fitted kitchen with centre island, to the bespoke walk-in wardrobe with full-length mirror panelling. The spacious living areas feature polished porcelain floors, expansive windows for natural light, and a well-proportioned compound with private parking and landscaped frontage.",
     amenities: ["Designer Pop Ceiling", "Fitted Kitchen with Island", "Walk-in Wardrobe", "Marble Accent Wall", "Private Compound", "Ambient Lighting", "Premium Tiling", "Secure Entry", "Landscaped Frontage"],
