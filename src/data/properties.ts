@@ -95,7 +95,7 @@ export const properties: Property[] = [
     bathrooms: 3,
     area: "220 sqm",
     image: propertyNew1,
-    gallery: [propertyNew1],
+    gallery: [propertyNew1, propertyInterior1],
     description: "A thoughtfully designed 3-bedroom detached bungalow featuring a contemporary façade with clean architectural lines, a covered front porch with statement lighting, and premium exterior finishes. Situated in a well-planned residential enclave, this property combines modern aesthetics with practical living — ideal for families and first-time homeowners seeking quality and value.",
     amenities: ["Covered Porch", "Statement Lighting", "Gated Compound", "Paved Driveway", "Modern Finishes", "Landscaped Garden"],
     featured: true,
