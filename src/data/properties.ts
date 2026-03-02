@@ -230,7 +230,7 @@ export const properties: Property[] = [
     bathrooms: 3,
     area: "230 sqm",
     image: propertyNew8,
-    gallery: [propertyNew8],
+    gallery: [propertyNew8, propertyExtra9],
     description: "A pristine 3-bedroom bungalow distinguished by its crisp white exterior, dark stone-clad column accents, and clean architectural geometry. The elevated entrance with wide steps, covered porch, and shingle-style charcoal roof create a polished streetscape presence. Situated in a quiet residential corridor — ideal for buyers prioritising modern aesthetics and low-maintenance living.",
     amenities: ["White Exterior Finish", "Stone Column Accents", "Elevated Entrance", "Covered Porch", "Shingle Roof", "Quiet Location"],
     featured: true,
