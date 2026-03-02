@@ -134,7 +134,7 @@ export const properties: Property[] = [
     bathrooms: 4,
     area: "320 sqm",
     image: propertyNew2,
-    gallery: [propertyNew2, story3],
+    gallery: [propertyNew2, story3, propertyExtra12, propertyExtra13, propertyExtra132],
     description: "An elegantly proportioned residence distinguished by its neoclassical arched entryways, ornamental cornicing, and symmetrical façade. This 4-bedroom bungalow exudes timeless sophistication with expansive window openings, a grand covered entrance, and meticulously landscaped surroundings — a refined choice for buyers who appreciate classical architectural character.",
     amenities: ["Arched Entryways", "Ornamental Cornicing", "Grand Entrance", "Landscaped Grounds", "Spacious Layout", "Private Parking"],
     featured: true,
