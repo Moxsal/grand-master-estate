@@ -18,6 +18,10 @@ import propertyNew2 from "@/assets/property-new-2.jpg";
 import propertyNew3 from "@/assets/property-new-3.jpg";
 import propertyNew4 from "@/assets/property-new-4.jpg";
 import propertyNew5 from "@/assets/property-new-5.jpg";
+import propertyNew6 from "@/assets/property-new-6.jpg";
+import propertyNew7 from "@/assets/property-new-7.jpg";
+import propertyNew8 from "@/assets/property-new-8.jpg";
+import propertyInterior1 from "@/assets/property-interior-1.jpg";
 
 export interface Property {
   id: string;
