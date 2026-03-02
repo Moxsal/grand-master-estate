@@ -13,6 +13,11 @@ import terraceFrontEntrance from "@/assets/terrace-front-entrance.jpg";
 import terraceCourtyard from "@/assets/terrace-courtyard.jpg";
 import terraceKitchen from "@/assets/terrace-kitchen.jpg";
 import terraceReception from "@/assets/terrace-reception.jpg";
+import propertyNew1 from "@/assets/property-new-1.jpg";
+import propertyNew2 from "@/assets/property-new-2.jpg";
+import propertyNew3 from "@/assets/property-new-3.jpg";
+import propertyNew4 from "@/assets/property-new-4.jpg";
+import propertyNew5 from "@/assets/property-new-5.jpg";
 
 export interface Property {
   id: string;
@@ -74,5 +79,85 @@ export const properties: Property[] = [
     description: "A masterfully crafted 4-bedroom contemporary terrace duplex delivered to the highest standards of modern living. This completed development showcases bold architectural lines, premium interior finishes, and meticulous attention to detail — from the designer pop ceilings with ambient LED lighting and fully fitted kitchen with centre island, to the bespoke walk-in wardrobe with full-length mirror panelling. The spacious living areas feature polished porcelain floors, expansive windows for natural light, and a well-proportioned compound with private parking and landscaped frontage.",
     amenities: ["Designer Pop Ceiling", "Fitted Kitchen with Island", "Walk-in Wardrobe", "Marble Accent Wall", "Private Compound", "Ambient Lighting", "Premium Tiling", "Secure Entry", "Landscaped Frontage"],
     featured: true,
+  },
+  {
+    id: "9",
+    title: "Modern Detached Bungalow",
+    location: "Ajah, Lagos",
+    price: "Price Available Upon Request",
+    priceValue: 0,
+    type: "Residential",
+    bedrooms: 3,
+    bathrooms: 3,
+    area: "220 sqm",
+    image: propertyNew1,
+    gallery: [propertyNew1],
+    description: "A thoughtfully designed 3-bedroom detached bungalow featuring a contemporary façade with clean architectural lines, a covered front porch with statement lighting, and premium exterior finishes. Situated in a well-planned residential enclave, this property combines modern aesthetics with practical living — ideal for families and first-time homeowners seeking quality and value.",
+    amenities: ["Covered Porch", "Statement Lighting", "Gated Compound", "Paved Driveway", "Modern Finishes", "Landscaped Garden"],
+    featured: true,
+  },
+  {
+    id: "10",
+    title: "Classical Arch-Front Residence",
+    location: "Lekki Phase 2, Lagos",
+    price: "Price Available Upon Request",
+    priceValue: 0,
+    type: "Residential",
+    bedrooms: 4,
+    bathrooms: 4,
+    area: "320 sqm",
+    image: propertyNew2,
+    gallery: [propertyNew2],
+    description: "An elegantly proportioned residence distinguished by its neoclassical arched entryways, ornamental cornicing, and symmetrical façade. This 4-bedroom bungalow exudes timeless sophistication with expansive window openings, a grand covered entrance, and meticulously landscaped surroundings — a refined choice for buyers who appreciate classical architectural character.",
+    amenities: ["Arched Entryways", "Ornamental Cornicing", "Grand Entrance", "Landscaped Grounds", "Spacious Layout", "Private Parking"],
+    featured: true,
+  },
+  {
+    id: "11",
+    title: "Premium Contemporary Bungalow",
+    location: "Ibeju-Lekki, Lagos",
+    price: "Price Available Upon Request",
+    priceValue: 0,
+    type: "Residential",
+    bedrooms: 4,
+    bathrooms: 4,
+    area: "300 sqm",
+    image: propertyNew3,
+    gallery: [propertyNew3],
+    description: "A striking 4-bedroom bungalow defined by bold geometric columns, ambient recessed lighting, and a dramatic stone-clad accent wall. The elevated entrance with feature steps and designer pendant lighting creates an impressive arrival experience. Generously proportioned with modern fenestration for abundant natural light — perfectly suited for executives seeking a distinguished address.",
+    amenities: ["Geometric Columns", "Recessed Lighting", "Stone Accent Wall", "Elevated Entrance", "Designer Pendant Light", "Modern Fenestration"],
+    featured: true,
+  },
+  {
+    id: "12",
+    title: "Heritage-Inspired Detached Bungalow",
+    location: "Sangotedo, Lagos",
+    price: "Price Available Upon Request",
+    priceValue: 0,
+    type: "Residential",
+    bedrooms: 3,
+    bathrooms: 3,
+    area: "280 sqm",
+    image: propertyNew4,
+    gallery: [propertyNew4],
+    description: "A charming 3-bedroom detached bungalow that blends heritage-inspired details with contemporary construction standards. The distinctive arched window, brick accent façade, and columned front porch lend warmth and character, while the dark-toned hip roof and well-maintained frontage project solidity and curb appeal — an excellent opportunity for families and investors alike.",
+    amenities: ["Arched Window", "Brick Accent Façade", "Columned Porch", "Hip Roof", "Paved Frontage", "Secure Perimeter"],
+    featured: false,
+  },
+  {
+    id: "13",
+    title: "Executive Modern Bungalow",
+    location: "Awoyaya, Lagos",
+    price: "Price Available Upon Request",
+    priceValue: 0,
+    type: "Residential",
+    bedrooms: 3,
+    bathrooms: 3,
+    area: "260 sqm",
+    image: propertyNew5,
+    gallery: [propertyNew5],
+    description: "A sleek and commanding 3-bedroom executive bungalow with a minimalist contemporary design. The crisp white exterior contrasts elegantly with the dark-toned roof, while tall vertical windows and structured symmetry create a refined streetscape presence. Ample private parking, manicured landscaping, and a secure perimeter wall complete this turnkey residence — ideal for professionals and discerning homeowners.",
+    amenities: ["Minimalist Design", "Tall Vertical Windows", "Structured Symmetry", "Private Parking", "Manicured Landscaping", "Perimeter Security"],
+    featured: false,
   },
 ];

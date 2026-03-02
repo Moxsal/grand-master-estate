@@ -6,7 +6,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PropertyCard from "@/components/PropertyCard";
 import { properties } from "@/data/properties";
-import heroBg from "@/assets/hero-bg.jpg";
+import propertyNew3 from "@/assets/property-new-3.jpg";
 import michealImg from "@/assets/micheal-ojimadu.jpg";
 import adonisImg from "@/assets/adonis-peterz.jpg";
 import investment1 from "@/assets/investment-1.png";
@@ -33,7 +33,7 @@ const Index = () => {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroBg})` }}
+          style={{ backgroundImage: `url(${propertyNew3})` }}
         />
         <div className="absolute inset-0 bg-gradient-navy opacity-70" />
         <motion.div
