@@ -150,7 +150,7 @@ export const properties: Property[] = [
     bathrooms: 4,
     area: "300 sqm",
     image: propertyNew3,
-    gallery: [propertyNew3, story4],
+    gallery: [propertyNew3, story4, propertyExtra4],
     description: "A striking 4-bedroom bungalow defined by bold geometric columns, ambient recessed lighting, and a dramatic stone-clad accent wall. The elevated entrance with feature steps and designer pendant lighting creates an impressive arrival experience. Generously proportioned with modern fenestration for abundant natural light — perfectly suited for executives seeking a distinguished address.",
     amenities: ["Geometric Columns", "Recessed Lighting", "Stone Accent Wall", "Elevated Entrance", "Designer Pendant Light", "Modern Fenestration"],
     featured: true,
