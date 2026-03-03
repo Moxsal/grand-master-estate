@@ -16,7 +16,6 @@ const fadeUp = {
 const Properties = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [typeFilter, setTypeFilter] = useState("all");
-  const [bedroomFilter, setBedroomFilter] = useState("all");
 
   const filteredProperties = useMemo(() => {
     return properties.filter((p) => {
@@ -24,14 +23,9 @@ const Properties = () => {
         p.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
         p.location.toLowerCase().includes(searchQuery.toLowerCase());
       const matchesType = typeFilter === "all" || p.type === typeFilter;
-      const matchesBedrooms =
-        bedroomFilter === "all" ||
-        (bedroomFilter === "1-2" && p.bedrooms >= 1 && p.bedrooms <= 2) ||
-        (bedroomFilter === "3-4" && p.bedrooms >= 3 && p.bedrooms <= 4) ||
-        (bedroomFilter === "5+" && p.bedrooms >= 5);
-      return matchesSearch && matchesType && matchesBedrooms;
+      return matchesSearch && matchesType;
     });
-  }, [searchQuery, typeFilter, bedroomFilter]);
+  }, [searchQuery, typeFilter]);
 
   return (
     <div className="min-h-screen bg-background">
@@ -44,7 +38,7 @@ const Properties = () => {
             Our Portfolio
           </p>
           <h1 className="font-display text-4xl md:text-5xl font-bold text-primary-foreground mb-4">
-            Property Listings
+            Properties
           </h1>
           <p className="text-primary-foreground/70 max-w-xl mx-auto">
             Browse our curated selection of premium properties across Nigeria
@@ -76,17 +70,6 @@ const Properties = () => {
                 <SelectItem value="Apartment">Apartment</SelectItem>
                 <SelectItem value="Villa">Villa</SelectItem>
                 <SelectItem value="Land">Land</SelectItem>
-              </SelectContent>
-            </Select>
-            <Select value={bedroomFilter} onValueChange={setBedroomFilter}>
-              <SelectTrigger className="w-full md:w-48">
-                <SelectValue placeholder="Bedrooms" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="all">Any Bedrooms</SelectItem>
-                <SelectItem value="1-2">1-2 Bedrooms</SelectItem>
-                <SelectItem value="3-4">3-4 Bedrooms</SelectItem>
-                <SelectItem value="5+">5+ Bedrooms</SelectItem>
               </SelectContent>
             </Select>
           </div>
