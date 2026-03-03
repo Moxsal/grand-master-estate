@@ -55,11 +55,23 @@ const PropertyCard = ({ property }: PropertyCardProps) => {
             {property.area}
           </div>
         </div>
-        <Link to={`/properties/${property.id}`}>
-          <Button className="w-full bg-primary text-primary-foreground hover:bg-navy-light transition-colors">
-            View Details
-          </Button>
-        </Link>
+        <div className="flex gap-2">
+          <Link to={`/properties/${property.id}`} className="flex-1">
+            <Button className="w-full bg-primary text-primary-foreground hover:bg-navy-light transition-colors text-sm">
+              View Details
+            </Button>
+          </Link>
+          <a
+            href={`https://wa.me/234919945833?text=${encodeURIComponent(`Hi, I'm interested in: ${property.title} - ${property.location}`)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1"
+          >
+            <Button variant="outline" className="w-full border-accent text-accent hover:bg-accent hover:text-accent-foreground transition-colors text-sm">
+              Schedule Viewing
+            </Button>
+          </a>
+        </div>
       </div>
     </div>
   );
