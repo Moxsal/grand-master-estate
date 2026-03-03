@@ -336,7 +336,7 @@ const Index = () => {
               },
               {
                 name: "Adonis St-Gerald Une Peterz",
-                role: "Vice President / COO & Investor",
+                role: "Vice President & CEO / Investor",
                 org: "Best Grandmaster Group",
                 image: adonisImg,
                 bio: "An accomplished business strategist and investor, Adonis brings global perspective and operational excellence to BGM Group. His expertise in property investment and management ensures world-class service delivery.",

@@ -119,7 +119,7 @@ const About = () => {
               },
               {
                 name: "Adonis St-Gerald Une Peterz",
-                role: "Vice President / COO & Investor",
+                role: "Vice President & CEO / Investor",
                 org: "Best Grandmaster Group",
                 phone: "+234 919 945 833",
                 image: adonisImg,
