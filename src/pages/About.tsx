@@ -1,9 +1,9 @@
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Shield, Target, Eye, Award } from "lucide-react";
+import { Shield, Target, Eye, Award, ChevronRight, Building, Users, TrendingUp } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import michealImg from "@/assets/micheal-ojimadu.jpg";
-import adonisImg from "@/assets/adonis-peterz.jpg";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -26,12 +26,33 @@ const About = () => {
             Best Grandmaster Realty
           </h1>
           <p className="text-primary-foreground/70 max-w-2xl mx-auto">
-            A trusted name in Nigerian real estate, committed to excellence, integrity, and creating lasting value for our clients.
+            A premier real estate development and investment firm delivering institutional-grade property solutions across Nigeria's most strategic markets.
           </p>
         </div>
       </section>
 
-      {/* Story */}
+      {/* Stats Bar */}
+      <section className="bg-card border-b border-border py-10">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            {[
+              { value: "500+", label: "Properties Delivered" },
+              { value: "10+", label: "Years of Experience" },
+              { value: "98%", label: "Client Satisfaction" },
+              { value: "RC: 3497825", label: "Registered & Verified" },
+            ].map((stat) => (
+              <div key={stat.label}>
+                <p className="font-display text-2xl md:text-3xl font-bold text-accent mb-1">
+                  {stat.value}
+                </p>
+                <p className="text-muted-foreground text-sm">{stat.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Our Story */}
       <section className="py-20">
         <div className="container mx-auto px-4">
           <motion.div
@@ -39,25 +60,31 @@ const About = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={stagger}
-            className="max-w-3xl mx-auto text-center"
+            className="max-w-3xl mx-auto"
           >
-            <motion.h2 variants={fadeUp} className="font-display text-3xl font-bold text-foreground mb-6">
+            <motion.p variants={fadeUp} className="text-accent tracking-[0.2em] uppercase text-sm font-medium mb-2 text-center">
+              Who We Are
+            </motion.p>
+            <motion.h2 variants={fadeUp} className="font-display text-3xl font-bold text-foreground mb-8 text-center">
               Our Story
             </motion.h2>
-            <motion.p variants={fadeUp} className="text-muted-foreground leading-relaxed mb-4">
-              Best Grandmaster Realty is a subsidiary of Best Grandmaster Group (BGM), a diversified conglomerate with interests spanning real estate, investments, and business development across Nigeria and beyond.
+            <motion.p variants={fadeUp} className="text-muted-foreground leading-relaxed mb-5">
+              Best Grandmaster Realty is a subsidiary of Best Grandmaster Group (BGM), a diversified conglomerate with interests spanning real estate development, property investment, and strategic business ventures across Nigeria and the broader African market.
             </motion.p>
-            <motion.p variants={fadeUp} className="text-muted-foreground leading-relaxed mb-4">
-              Founded with a vision to transform the Nigerian real estate landscape, we combine local expertise with global standards to deliver exceptional property solutions. Whether you're buying your first home, expanding your investment portfolio, or seeking premium commercial spaces, our team of dedicated professionals is here to guide you every step of the way.
+            <motion.p variants={fadeUp} className="text-muted-foreground leading-relaxed mb-5">
+              With a portfolio of over 500 properties delivered across Lagos's most sought-after corridors — from Lekki and Ikoyi to Eko Atlantic City — we have established ourselves as one of the most trusted names in Nigerian real estate. Our developments are defined by architectural excellence, legal transparency, and enduring value.
             </motion.p>
-            <motion.p variants={fadeUp} className="text-accent font-semibold text-sm">
-              RC Registration: 3497825
+            <motion.p variants={fadeUp} className="text-muted-foreground leading-relaxed mb-5">
+              We serve a discerning clientele of high-net-worth individuals, institutional investors, diaspora buyers, and corporate entities seeking premium residential and commercial assets. Every engagement is guided by rigorous due diligence, market expertise, and a commitment to exceeding client expectations.
+            </motion.p>
+            <motion.p variants={fadeUp} className="text-muted-foreground leading-relaxed">
+              Whether you are acquiring your first home, expanding an investment portfolio, or exploring joint venture development opportunities, Best Grandmaster Realty provides the expertise, integrity, and market access to help you succeed.
             </motion.p>
           </motion.div>
         </div>
       </section>
 
-      {/* Mission & Vision */}
+      {/* Mission, Vision, Values */}
       <section className="py-20 bg-secondary">
         <div className="container mx-auto px-4">
           <motion.div
@@ -68,9 +95,9 @@ const About = () => {
             className="grid grid-cols-1 md:grid-cols-3 gap-8"
           >
             {[
-              { icon: Target, title: "Our Mission", desc: "To provide world-class real estate services that create lasting value, build trust, and transform communities across Nigeria." },
-              { icon: Eye, title: "Our Vision", desc: "To be the most trusted and innovative real estate company in Africa, setting the standard for excellence and integrity." },
-              { icon: Award, title: "Our Values", desc: "Integrity, excellence, innovation, and client-first approach guide every decision we make and every property we represent." },
+              { icon: Target, title: "Our Mission", desc: "To deliver world-class real estate solutions that create lasting value, build generational wealth, and transform communities across Nigeria." },
+              { icon: Eye, title: "Our Vision", desc: "To be Africa's most trusted and innovative real estate development firm — setting the industry standard for excellence, transparency, and client success." },
+              { icon: Award, title: "Our Values", desc: "Integrity, excellence, innovation, and a relentless client-first approach guide every decision we make, every property we develop, and every relationship we build." },
             ].map((item) => (
               <motion.div key={item.title} variants={fadeUp} className="bg-card rounded-lg p-8 text-center shadow-sm">
                 <div className="w-14 h-14 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-5">
@@ -84,21 +111,15 @@ const About = () => {
         </div>
       </section>
 
-      {/* Team */}
+      {/* Why Invest With Us */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={stagger}
-            className="text-center mb-12"
-          >
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="text-center mb-12">
             <motion.p variants={fadeUp} className="text-accent tracking-[0.2em] uppercase text-sm font-medium mb-2">
-              Leadership
+              Competitive Advantage
             </motion.p>
             <motion.h2 variants={fadeUp} className="font-display text-3xl md:text-4xl font-bold text-foreground">
-              Executive Team
+              Why Invest With BGM Realty
             </motion.h2>
           </motion.div>
           <motion.div
@@ -106,43 +127,50 @@ const About = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={stagger}
-            className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl mx-auto"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto"
           >
             {[
-              {
-                name: "Micheal Izuchukwu Ojimadu",
-                role: "Chairman / CEO",
-                org: "Best Grandmaster Group (BGM)",
-                phone: "+234 919 945 833 / 070 6298 5424",
-                image: michealImg,
-                bio: "As Chairman and CEO of Best Grandmaster Group, Micheal Izuchukwu Ojimadu brings visionary leadership and deep expertise in real estate development and investment. With a proven track record of successful property ventures across Nigeria, he drives the strategic direction of the group with a focus on innovation, integrity, and community impact.",
-              },
-              {
-                name: "Adonis St-Gerald Une Peterz",
-                role: "Vice President & CEO / Investor",
-                org: "Best Grandmaster Group",
-                phone: "+234 919 945 833",
-                image: adonisImg,
-                bio: "As Vice President and COO, Adonis St-Gerald Une Peterz brings a wealth of experience in business operations, property investment, and strategic management. His global perspective and commitment to operational excellence ensure that BGM Group consistently delivers world-class real estate services.",
-              },
-            ].map((person) => (
-              <motion.div key={person.name} variants={fadeUp} className="bg-card rounded-lg overflow-hidden shadow-md">
-                <div className="aspect-square overflow-hidden">
-                  <img src={person.image} alt={person.name} className="w-full h-full object-cover" />
+              { icon: Building, title: "500+ Properties Delivered", desc: "A proven track record of successfully completing and delivering premium properties across Lagos's most valued locations." },
+              { icon: Shield, title: "Verified & Legally Sound", desc: "Every property undergoes thorough legal verification. All transactions are backed by proper title documentation and due diligence." },
+              { icon: Users, title: "Professional Leadership", desc: "Our executive team brings decades of combined experience in real estate development, investment management, and strategic operations." },
+              { icon: TrendingUp, title: "High-Value Returns", desc: "We identify and develop properties in high-growth corridors, ensuring strong capital appreciation and rental yield for our investors." },
+              { icon: Award, title: "End-to-End Service", desc: "From property sourcing and acquisition to development, management, and resale — we handle every aspect of your real estate journey." },
+              { icon: Target, title: "Market Intelligence", desc: "Deep understanding of Nigeria's real estate market dynamics, pricing trends, and emerging opportunity zones gives our clients a decisive edge." },
+            ].map((item) => (
+              <motion.div key={item.title} variants={fadeUp} className="bg-card rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow border border-border">
+                <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mb-4">
+                  <item.icon className="w-6 h-6 text-accent" />
                 </div>
-                <div className="p-6">
-                  <h3 className="font-display text-xl font-bold text-card-foreground">{person.name}</h3>
-                  <p className="text-accent font-medium text-sm mt-1">{person.role}</p>
-                  <p className="text-muted-foreground text-xs mb-3">{person.org}</p>
-                  <p className="text-muted-foreground text-sm leading-relaxed mb-3">{person.bio}</p>
-                  <p className="text-muted-foreground text-xs">
-                    <Shield className="w-3 h-3 inline mr-1" />
-                    {person.phone}
-                  </p>
-                </div>
+                <h3 className="font-display text-lg font-semibold text-card-foreground mb-2">{item.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
               </motion.div>
             ))}
           </motion.div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-16 bg-primary">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
+            Ready to Partner With Us?
+          </h2>
+          <p className="text-primary-foreground/70 max-w-xl mx-auto mb-8">
+            Whether you're buying, investing, or developing — our team is ready to deliver results.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link to="/team">
+              <Button size="lg" className="bg-gradient-gold text-primary font-semibold hover:opacity-90 transition-opacity">
+                Meet Our Team
+                <ChevronRight className="ml-1 w-4 h-4" />
+              </Button>
+            </Link>
+            <Link to="/contact">
+              <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
+                Contact Us
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
 

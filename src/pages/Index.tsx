@@ -89,7 +89,7 @@ const Index = () => {
             className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center"
           >
             {[
-              { value: "200+", label: "Properties Sold" },
+              { value: "500+", label: "Properties Sold" },
               { value: "50+", label: "Active Listings" },
               { value: "98%", label: "Client Satisfaction" },
               { value: "10+", label: "Years Experience" },
@@ -149,7 +149,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Featured Investment Opportunities */}
+      {/* Land & Investment Opportunities */}
       <section className="py-20 bg-secondary">
         <div className="container mx-auto px-4">
           <motion.div
@@ -163,7 +163,7 @@ const Index = () => {
               Exclusive Deals
             </motion.p>
             <motion.h2 variants={fadeUp} className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Featured Investment Opportunities
+              Land & Investment Opportunities
             </motion.h2>
             <motion.p variants={fadeUp} className="text-muted-foreground max-w-2xl mx-auto">
               Premium land and development opportunities for serious investors and developers
@@ -180,31 +180,28 @@ const Index = () => {
               {
                 image: investment1,
                 title: "Joint Venture Development Opportunity – Chevron Alternative Route",
-                description: "Prime joint venture opportunity located directly along the Chevron alternative route. This property is ideal for a terrace development project. The title document is Governor's Consent, providing strong legal security for investors and developers. Other agreement terms are open for discussion. Perfect for smart developers ready for immediate development.",
+                description: "Prime joint venture opportunity located directly along the Chevron alternative route. Ideal for terrace development with Governor's Consent title document.",
                 highlights: [
                   { label: "Title", value: "Governor's Consent" },
                   { label: "Type", value: "Joint Venture" },
-                  { label: "Use", value: "Terrace Development" },
                 ],
               },
               {
                 image: investment3,
                 title: "Premium Development Land – Lekki Beach Road, Igbarra",
-                description: "A premium 5-plot property strategically located in a well-developed and highly desirable area of Lekki Beach Road, Igbarra. This direct brief offering is suitable for terraces or block of flats development. An excellent opportunity for investors seeking high-return residential development.",
+                description: "A premium 5-plot property in a highly desirable area of Lekki Beach Road. Suitable for terraces or block of flats development.",
                 highlights: [
                   { label: "Size", value: "5 Plots" },
                   { label: "Type", value: "Direct Brief" },
-                  { label: "Use", value: "Terraces / Flats" },
                 ],
               },
               {
                 image: investment2,
                 title: "Joint Venture Land – Opposite Mayfair Gardens, Awoyaya",
-                description: "Strategically positioned mixed-use development land located opposite Mayfair Gardens, Awoyaya. Suitable for both commercial and residential projects. Total Area: 3,382.659 sqm (as indicated in survey). Available as a direct brief for capable developers seeking a structured joint venture opportunity.",
+                description: "Strategically positioned mixed-use development land. Total Area: 3,382.659 sqm. Available as a direct brief for capable developers.",
                 highlights: [
                   { label: "Area", value: "3,382.659 sqm" },
                   { label: "Type", value: "Mixed-Use" },
-                  { label: "Brief", value: "Direct" },
                 ],
               },
             ].map((item) => (
@@ -251,6 +248,14 @@ const Index = () => {
               </motion.div>
             ))}
           </motion.div>
+          <div className="text-center mt-10">
+            <Link to="/land">
+              <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                View All Land Listings
+                <ChevronRight className="ml-1 w-4 h-4" />
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -280,7 +285,7 @@ const Index = () => {
           >
             {[
               { icon: Shield, title: "Trusted & Verified", desc: "All properties are verified and legally documented. RC: 3497825." },
-              { icon: Home, title: "Premium Listings", desc: "Access to exclusive luxury properties across Nigeria's top locations." },
+              { icon: Home, title: "500+ Properties", desc: "Access to an extensive portfolio of premium properties across Nigeria's top locations." },
               { icon: TrendingUp, title: "Investment Guidance", desc: "Expert advice on high-yield property investments and market trends." },
               { icon: Users, title: "Dedicated Support", desc: "Personalized service from consultation to closing and beyond." },
             ].map((item) => (
@@ -302,7 +307,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Leadership */}
+      {/* Leadership Preview */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <motion.div
@@ -332,14 +337,12 @@ const Index = () => {
                 role: "Chairman / CEO",
                 org: "Best Grandmaster Group (BGM)",
                 image: michealImg,
-                bio: "A visionary leader with extensive experience in real estate development and investment across Nigeria. Micheal drives the strategic direction of BGM Group with a passion for creating value and transforming communities.",
               },
               {
                 name: "Adonis St-Gerald Une Peterz",
                 role: "Vice President & CEO / Investor",
                 org: "Best Grandmaster Group",
                 image: adonisImg,
-                bio: "An accomplished business strategist and investor, Adonis brings global perspective and operational excellence to BGM Group. His expertise in property investment and management ensures world-class service delivery.",
               },
             ].map((person) => (
               <motion.div
@@ -359,12 +362,19 @@ const Index = () => {
                     {person.name}
                   </h3>
                   <p className="text-accent font-medium text-sm mt-1">{person.role}</p>
-                  <p className="text-muted-foreground text-xs mb-3">{person.org}</p>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{person.bio}</p>
+                  <p className="text-muted-foreground text-xs">{person.org}</p>
                 </div>
               </motion.div>
             ))}
           </motion.div>
+          <div className="text-center mt-10">
+            <Link to="/team">
+              <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                View Full Team
+                <ChevronRight className="ml-1 w-4 h-4" />
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -400,19 +410,19 @@ const Index = () => {
               },
               {
                 name: "Amara Eze",
-                text: "I've invested in multiple properties through BGM Realty. Their market knowledge and integrity are unmatched. I trust them completely with my real estate portfolio.",
+                text: "The investment guidance I received from BGM Realty was invaluable. They helped me identify high-growth areas and secure properties that have already appreciated significantly.",
                 role: "Property Investor",
               },
               {
-                name: "David Akpan",
-                text: "The level of service and attention to detail from BGM Realty is truly world-class. They helped us find the perfect commercial space for our business.",
-                role: "Business Owner, Abuja",
+                name: "Tunde Bakare",
+                text: "What sets BGM apart is their integrity. In a market full of uncertainty, they provided complete transparency and delivered exactly what was promised.",
+                role: "Business Executive",
               },
             ].map((testimonial) => (
               <motion.div
                 key={testimonial.name}
                 variants={fadeUp}
-                className="bg-navy-light/50 rounded-lg p-8 border border-primary-foreground/10"
+                className="bg-primary-foreground/5 rounded-lg p-8 border border-primary-foreground/10"
               >
                 <div className="flex gap-1 mb-4">
                   {[...Array(5)].map((_, i) => (
@@ -441,24 +451,27 @@ const Index = () => {
             viewport={{ once: true }}
             variants={stagger}
           >
-            <motion.h2 variants={fadeUp} className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Ready to Find Your Dream Property?
+            <motion.h2
+              variants={fadeUp}
+              className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4"
+            >
+              Ready to Find Your Next Property?
             </motion.h2>
-            <motion.p variants={fadeUp} className="text-muted-foreground text-lg mb-8 max-w-xl mx-auto">
-              Get in touch with our team today and let us help you make the best
-              property decision of your life.
+            <motion.p variants={fadeUp} className="text-muted-foreground max-w-xl mx-auto mb-8">
+              Let our team of experts help you discover the perfect property or investment
+              opportunity. Contact us today to get started.
             </motion.p>
             <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/properties">
-                <Button size="lg" className="bg-gradient-gold text-primary font-semibold text-base px-8 hover:opacity-90">
+                <Button size="lg" className="bg-gradient-gold text-primary font-semibold text-base px-8 hover:opacity-90 transition-opacity">
                   Browse Properties
                 </Button>
               </Link>
-              <a href="https://wa.me/234919945833" target="_blank" rel="noopener noreferrer">
+              <Link to="/contact">
                 <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground text-base px-8">
-                  WhatsApp Us
+                  Contact Us
                 </Button>
-              </a>
+              </Link>
             </motion.div>
           </motion.div>
         </div>

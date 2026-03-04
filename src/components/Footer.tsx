@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin } from "lucide-react";
+import bgrLogo from "@/assets/bgr-logo.png";
 
 const Footer = () => {
   return (
@@ -8,12 +9,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div>
-            <h3 className="font-display text-2xl font-bold mb-2">
-              Best Grandmaster
-            </h3>
-            <p className="text-xs tracking-[0.3em] uppercase text-gold mb-4">
-              Realty
-            </p>
+            <img
+              src={bgrLogo}
+              alt="Best Grandmaster Realty"
+              className="h-14 w-auto object-contain mb-4"
+            />
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
               Your Trusted Property Partner. We help you find the perfect property
               for your lifestyle and investment goals.
@@ -32,6 +32,8 @@ const Footer = () => {
               {[
                 { label: "Home", path: "/" },
                 { label: "Properties", path: "/properties" },
+                { label: "Land", path: "/land" },
+                { label: "Our Team", path: "/team" },
                 { label: "About Us", path: "/about" },
                 { label: "Contact", path: "/contact" },
               ].map((link) => (
@@ -52,17 +54,21 @@ const Footer = () => {
               Property Types
             </h4>
             <div className="flex flex-col gap-3">
-              {["Residential", "Commercial", "Land", "Luxury Villas", "Apartments"].map(
-                (type) => (
-                  <Link
-                    key={type}
-                    to="/properties"
-                    className="text-sm text-primary-foreground/70 hover:text-gold transition-colors"
-                  >
-                    {type}
-                  </Link>
-                )
-              )}
+              {[
+                { label: "Residential", path: "/properties" },
+                { label: "Commercial", path: "/properties" },
+                { label: "Land & Development", path: "/land" },
+                { label: "Luxury Villas", path: "/properties" },
+                { label: "Apartments", path: "/properties" },
+              ].map((type) => (
+                <Link
+                  key={type.label}
+                  to={type.path}
+                  className="text-sm text-primary-foreground/70 hover:text-gold transition-colors"
+                >
+                  {type.label}
+                </Link>
+              ))}
             </div>
           </div>
 
