@@ -3,10 +3,13 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
+import bgrLogo from "@/assets/bgr-logo.png";
 
 const navLinks = [
   { label: "Home", path: "/" },
   { label: "Properties", path: "/properties" },
+  { label: "Land", path: "/land" },
+  { label: "Our Team", path: "/team" },
   { label: "About", path: "/about" },
   { label: "Contact", path: "/contact" },
 ];
@@ -20,17 +23,16 @@ const Navbar = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex flex-col">
-            <span className="font-display text-xl font-bold text-primary-foreground tracking-wide">
-              Best Grandmaster
-            </span>
-            <span className="text-xs tracking-[0.3em] uppercase text-gold">
-              Realty
-            </span>
+          <Link to="/" className="flex items-center gap-3">
+            <img
+              src={bgrLogo}
+              alt="Best Grandmaster Realty"
+              className="h-12 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-6">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
@@ -47,7 +49,7 @@ const Navbar = () => {
           </div>
 
           {/* CTA */}
-          <div className="hidden md:flex items-center gap-4">
+          <div className="hidden lg:flex items-center gap-4">
             <a
               href="tel:+234919945833"
               className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-gold transition-colors"
@@ -65,7 +67,7 @@ const Navbar = () => {
           {/* Mobile menu button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-primary-foreground"
+            className="lg:hidden text-primary-foreground"
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -79,7 +81,7 @@ const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-primary border-t border-primary-foreground/10"
+            className="lg:hidden bg-primary border-t border-primary-foreground/10"
           >
             <div className="container mx-auto px-4 py-6 flex flex-col gap-4">
               {navLinks.map((link) => (
