@@ -176,7 +176,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-sm font-medium text-foreground">Adonis St-Gerald Une Peterz — Vice President / COO & Investor</p>
-                    <p className="text-muted-foreground text-sm group-hover:text-accent transition-colors">Phone / WhatsApp: +234 919 945 833</p>
+                    <p className="text-muted-foreground text-sm group-hover:text-accent transition-colors">Phone / WhatsApp: +234 706 298 5424</p>
                   </div>
                 </a>
               </motion.div>
