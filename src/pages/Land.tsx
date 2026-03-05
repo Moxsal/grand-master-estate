@@ -135,7 +135,7 @@ const Land = () => {
             Partner with Best Grandmaster Realty to connect your land with verified buyers and investors.
           </p>
           <a
-            href="https://wa.me/234919945833?text=Hi%2C%20I%20have%20land%20I%20would%20like%20to%20list%20with%20BGM%20Realty."
+            href="https://wa.me/2347033841190?text=Hi%2C%20I%20have%20land%20I%20would%20like%20to%20list%20with%20BGM%20Realty."
             target="_blank"
             rel="noopener noreferrer"
           >

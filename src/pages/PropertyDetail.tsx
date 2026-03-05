@@ -138,7 +138,7 @@ const PropertyDetail = () => {
 
               {/* Actions */}
               <div className="flex flex-col sm:flex-row gap-3">
-                <a href="https://wa.me/234919945833" target="_blank" rel="noopener noreferrer" className="flex-1">
+                <a href="https://wa.me/2347033841190" target="_blank" rel="noopener noreferrer" className="flex-1">
                   <Button size="lg" className="w-full bg-gradient-gold text-primary font-semibold hover:opacity-90">
                     <Phone className="w-4 h-4 mr-2" />
                     Schedule a Visit
