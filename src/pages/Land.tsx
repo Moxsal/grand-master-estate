@@ -106,7 +106,7 @@ const Land = () => {
                     {item.description}
                   </p>
                   <a
-                    href={`https://wa.me/234919945833?text=${encodeURIComponent(`Hi, I'm interested in: ${item.title} - ${item.location}`)}`}
+                    href={`https://wa.me/2347033841190?text=${encodeURIComponent(`Hi, I'm interested in: ${item.title} - ${item.location}`)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
