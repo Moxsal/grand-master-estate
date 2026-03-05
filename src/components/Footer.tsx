@@ -79,18 +79,13 @@ const Footer = () => {
             </h4>
             <div className="flex flex-col gap-4">
               <a
-                href="tel:+234919945833"
+                href="https://wa.me/2347033841190"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-3 text-sm text-primary-foreground/70 hover:text-gold transition-colors"
               >
                 <Phone className="w-4 h-4 text-gold shrink-0" />
-                +234 919 945 833
-              </a>
-              <a
-                href="tel:07062985424"
-                className="flex items-center gap-3 text-sm text-primary-foreground/70 hover:text-gold transition-colors"
-              >
-                <Phone className="w-4 h-4 text-gold shrink-0" />
-                070 6298 5424
+                +234 703 384 1190
               </a>
               <a
                 href="mailto:info@bgmrealty.com"

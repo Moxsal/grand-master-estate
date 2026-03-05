@@ -235,7 +235,7 @@ const Index = () => {
                     {item.description}
                   </p>
                   <a
-                    href="https://wa.me/234919945833"
+                    href="https://wa.me/2347033841190"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
