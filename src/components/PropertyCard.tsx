@@ -62,7 +62,7 @@ const PropertyCard = ({ property }: PropertyCardProps) => {
             </Button>
           </Link>
           <a
-            href={`https://wa.me/234919945833?text=${encodeURIComponent(`Hi, I'm interested in: ${property.title} - ${property.location}`)}`}
+            href={`https://wa.me/2347033841190?text=${encodeURIComponent(`Hi, I'm interested in: ${property.title} - ${property.location}`)}`}
             target="_blank"
             rel="noopener noreferrer"
             className="flex-1"

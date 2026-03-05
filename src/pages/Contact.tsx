@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Phone, Mail, MapPin, Send, MessageCircle } from "lucide-react";
+import { Phone, Mail, MapPin, Send, MessageCircle, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -103,26 +103,23 @@ const Contact = () => {
 
             {/* Contact Info & Map */}
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
+              {/* Official Company Contact */}
               <motion.h2 variants={fadeUp} className="font-display text-2xl font-bold text-foreground mb-6">
-                Contact Information
+                Official Company Contact
               </motion.h2>
-              <motion.div variants={fadeUp} className="space-y-6 mb-8">
-                <a href="tel:+234919945833" className="flex items-center gap-4 group">
+              <motion.div variants={fadeUp} className="space-y-5 mb-10">
+                <a
+                  href="https://wa.me/2347033841190"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-4 group"
+                >
                   <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center shrink-0">
-                    <Phone className="w-5 h-5 text-accent" />
+                    <MessageCircle className="w-5 h-5 text-accent" />
                   </div>
                   <div>
                     <p className="text-sm font-medium text-foreground">Phone / WhatsApp</p>
-                    <p className="text-muted-foreground text-sm group-hover:text-accent transition-colors">+234 919 945 833</p>
-                  </div>
-                </a>
-                <a href="tel:07062985424" className="flex items-center gap-4 group">
-                  <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center shrink-0">
-                    <Phone className="w-5 h-5 text-accent" />
-                  </div>
-                  <div>
-                    <p className="text-sm font-medium text-foreground">Micheal's Direct Line</p>
-                    <p className="text-muted-foreground text-sm group-hover:text-accent transition-colors">070 6298 5424</p>
+                    <p className="text-muted-foreground text-sm group-hover:text-accent transition-colors">+234 703 384 1190</p>
                   </div>
                 </a>
                 <a href="mailto:info@bgmrealty.com" className="flex items-center gap-4 group">
@@ -143,6 +140,31 @@ const Contact = () => {
                     <p className="text-muted-foreground text-sm">Lagos, Nigeria</p>
                   </div>
                 </div>
+                <p className="text-muted-foreground text-sm leading-relaxed pl-16">
+                  Clients who wish to book property inspections, purchase properties, or make general inquiries can contact the company directly using the official number above.
+                </p>
+              </motion.div>
+
+              {/* Leadership Contact */}
+              <motion.h3 variants={fadeUp} className="font-display text-xl font-bold text-foreground mb-5 flex items-center gap-2">
+                <Users className="w-5 h-5 text-accent" />
+                Leadership Contact
+              </motion.h3>
+              <motion.div variants={fadeUp} className="space-y-5 mb-6">
+                <a
+                  href="https://wa.me/2348023947619"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-4 group"
+                >
+                  <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center shrink-0">
+                    <Phone className="w-5 h-5 text-accent" />
+                  </div>
+                  <div>
+                    <p className="text-sm font-medium text-foreground">Micheal Izuchukwu Ojimadu — Chairman / CEO</p>
+                    <p className="text-muted-foreground text-sm group-hover:text-accent transition-colors">Phone / WhatsApp: +234 802 394 7619</p>
+                  </div>
+                </a>
                 <a
                   href="https://wa.me/234919945833"
                   target="_blank"
@@ -150,14 +172,17 @@ const Contact = () => {
                   className="flex items-center gap-4 group"
                 >
                   <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center shrink-0">
-                    <MessageCircle className="w-5 h-5 text-accent" />
+                    <Phone className="w-5 h-5 text-accent" />
                   </div>
                   <div>
-                    <p className="text-sm font-medium text-foreground">WhatsApp</p>
-                    <p className="text-muted-foreground text-sm group-hover:text-accent transition-colors">Chat with us on WhatsApp</p>
+                    <p className="text-sm font-medium text-foreground">Adonis St-Gerald Une Peterz — Vice President / COO & Investor</p>
+                    <p className="text-muted-foreground text-sm group-hover:text-accent transition-colors">Phone / WhatsApp: +234 919 945 833</p>
                   </div>
                 </a>
               </motion.div>
+              <motion.p variants={fadeUp} className="text-muted-foreground text-sm leading-relaxed mb-8">
+                Clients are welcome to contact the company directly or reach out to any member of the leadership team for assistance regarding property inquiries or partnerships.
+              </motion.p>
 
               {/* Map */}
               <motion.div variants={fadeUp} className="rounded-lg overflow-hidden h-72 border border-border">

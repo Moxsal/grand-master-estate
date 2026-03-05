@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Shield } from "lucide-react";
+import { Shield, MessageCircle } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import michealImg from "@/assets/micheal-ojimadu.jpg";
@@ -16,7 +16,8 @@ const teamMembers = [
     name: "Micheal Izuchukwu Ojimadu",
     role: "Chairman / CEO",
     org: "Best Grandmaster Group (BGM)",
-    phone: "+234 919 945 833 / 070 6298 5424",
+    phone: "+234 802 394 7619",
+    whatsapp: "2348023947619",
     image: michealImg,
     bio: "As Chairman and CEO of Best Grandmaster Group, Micheal Izuchukwu Ojimadu brings visionary leadership and deep expertise in real estate development and investment. With a proven track record of successful property ventures across Nigeria, he drives the strategic direction of the group with a focus on innovation, integrity, and community impact.",
   },
@@ -25,6 +26,7 @@ const teamMembers = [
     role: "Vice President & CEO / Investor",
     org: "Best Grandmaster Group",
     phone: "+234 919 945 833",
+    whatsapp: "234919945833",
     image: adonisImg,
     bio: "As Vice President and CEO / Investor, Adonis St-Gerald Une Peterz brings a wealth of experience in business operations, property investment, and strategic management. His global perspective and commitment to operational excellence ensure that BGM Group consistently delivers world-class real estate services.",
   },
@@ -86,10 +88,15 @@ const Team = () => {
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                     {person.bio}
                   </p>
-                  <p className="text-muted-foreground text-xs flex items-center gap-1">
-                    <Shield className="w-3 h-3" />
-                    {person.phone}
-                  </p>
+                  <a
+                    href={`https://wa.me/${person.whatsapp}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-accent hover:text-accent/80 transition-colors text-sm font-medium"
+                  >
+                    <MessageCircle className="w-4 h-4" />
+                    Phone / WhatsApp: {person.phone}
+                  </a>
                 </div>
               </motion.div>
             ))}
