@@ -14,8 +14,8 @@ const stagger = { visible: { transition: { staggerChildren: 0.15 } } };
 const teamMembers = [
   {
     name: "Micheal Izuchukwu Ojimadu",
-    role: "Chairman / CEO",
-    org: "Best Grandmaster Group (BGM)",
+    role: "President & CEO / Investor",
+    org: "Best Ground Master Group",
     phone: "+234 802 394 7619",
     whatsapp: "2348023947619",
     image: michealImg,
