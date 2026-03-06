@@ -334,8 +334,8 @@ const Index = () => {
             {[
               {
                 name: "Micheal Izuchukwu Ojimadu",
-                role: "Chairman / CEO",
-                org: "Best Grandmaster Group (BGM)",
+                role: "President & CEO / Investor",
+                org: "Best Ground Master Group",
                 image: michealImg,
               },
               {
