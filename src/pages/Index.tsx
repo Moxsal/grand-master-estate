@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, Shield, Home, TrendingUp, Users, Star, ChevronRight } from "lucide-react";
+import { ArrowRight, Shield, Home, TrendingUp, Users, Star, ChevronRight, Building2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
