@@ -339,9 +339,9 @@ const Index = () => {
                 image: michealImg,
               },
               {
-                name: "Adonis St-Gerald Une Peterz",
+                name: "Engr. Adonis St-Gerald Une Peterz",
                 role: "Vice President & CEO / Investor",
-                org: "Best Grandmaster Group",
+                org: "Best Grand Master Group",
                 image: adonisImg,
               },
             ].map((person) => (

@@ -107,6 +107,9 @@ const Footer = () => {
             © {new Date().getFullYear()} Best Grandmaster Realty. All rights reserved.
           </p>
           <div className="flex gap-6">
+            <Link to="/refund-policy" className="text-xs text-primary-foreground/50 hover:text-gold transition-colors">
+              Refund Policy
+            </Link>
             <a href="#" className="text-xs text-primary-foreground/50 hover:text-gold transition-colors">
               Privacy Policy
             </a>

@@ -22,9 +22,9 @@ const teamMembers = [
     bio: "As Chairman and CEO of Best Grandmaster Group, Micheal Izuchukwu Ojimadu brings visionary leadership and deep expertise in real estate development and investment. With a proven track record of successful property ventures across Nigeria, he drives the strategic direction of the group with a focus on innovation, integrity, and community impact.",
   },
   {
-    name: "Adonis St-Gerald Une Peterz",
+    name: "Engr. Adonis St-Gerald Une Peterz",
     role: "Vice President & CEO / Investor",
-    org: "Best Grandmaster Group",
+    org: "Best Grand Master Group",
     phone: "+234 706 298 5424",
     whatsapp: "2347062985424",
     image: adonisImg,
