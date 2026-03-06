@@ -287,6 +287,7 @@ const Index = () => {
               { icon: Shield, title: "Trusted & Verified", desc: "All properties are verified and legally documented. RC: 3497825." },
               { icon: Home, title: "500+ Properties", desc: "Access to an extensive portfolio of premium properties across Nigeria's top locations." },
               { icon: TrendingUp, title: "Investment Guidance", desc: "Expert advice on high-yield property investments and market trends." },
+              { icon: Building2, title: "Property Management Expertise", desc: "Currently managing over 6,000+ properties across Nigeria with professional maintenance, tenant coordination, and long-term value growth." },
               { icon: Users, title: "Dedicated Support", desc: "Personalized service from consultation to closing and beyond." },
             ].map((item) => (
               <motion.div
