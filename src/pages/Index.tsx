@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, Shield, Home, TrendingUp, Users, Star, ChevronRight } from "lucide-react";
+import { ArrowRight, Shield, Home, TrendingUp, Users, Star, ChevronRight, Building2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -281,12 +281,13 @@ const Index = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={stagger}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           >
             {[
               { icon: Shield, title: "Trusted & Verified", desc: "All properties are verified and legally documented. RC: 3497825." },
               { icon: Home, title: "500+ Properties", desc: "Access to an extensive portfolio of premium properties across Nigeria's top locations." },
               { icon: TrendingUp, title: "Investment Guidance", desc: "Expert advice on high-yield property investments and market trends." },
+              { icon: Building2, title: "Property Management Expertise", desc: "Currently managing over 6,000+ properties across Nigeria with professional maintenance, tenant coordination, and long-term value growth." },
               { icon: Users, title: "Dedicated Support", desc: "Personalized service from consultation to closing and beyond." },
             ].map((item) => (
               <motion.div
@@ -334,14 +335,14 @@ const Index = () => {
             {[
               {
                 name: "Micheal Izuchukwu Ojimadu",
-                role: "Chairman / CEO",
-                org: "Best Grandmaster Group (BGM)",
+                role: "President & CEO / Investor",
+                org: "Best Ground Master Group",
                 image: michealImg,
               },
               {
-                name: "Adonis St-Gerald Une Peterz",
+                name: "Engr. Adonis St-Gerald Une Peterz",
                 role: "Vice President & CEO / Investor",
-                org: "Best Grandmaster Group",
+                org: "Best Grand Master Group",
                 image: adonisImg,
               },
             ].map((person) => (

@@ -149,6 +149,50 @@ const About = () => {
         </div>
       </section>
 
+      {/* Construction & Property Development */}
+      <section className="py-20 bg-secondary">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={stagger}
+            className="max-w-3xl mx-auto text-center"
+          >
+            <motion.p variants={fadeUp} className="text-accent tracking-[0.2em] uppercase text-sm font-medium mb-2">
+              Development Track Record
+            </motion.p>
+            <motion.h2 variants={fadeUp} className="font-display text-3xl md:text-4xl font-bold text-foreground mb-8">
+              Construction & Property Development
+            </motion.h2>
+            <motion.p variants={fadeUp} className="text-muted-foreground leading-relaxed mb-5 text-lg">
+              Best Grandmaster Group has successfully partnered in over 1,000 construction projects across Nigeria and has independently completed over 500 self-developed construction and property development projects.
+            </motion.p>
+            <motion.p variants={fadeUp} className="text-muted-foreground leading-relaxed">
+              Our company continues to contribute to Nigeria's real estate sector through large-scale development, strategic partnerships, and quality construction standards.
+            </motion.p>
+          </motion.div>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={stagger}
+            className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mt-12"
+          >
+            {[
+              { value: "1,000+", label: "Partnership Projects" },
+              { value: "500+", label: "Self-Developed Projects" },
+              { value: "6,000+", label: "Properties Managed" },
+            ].map((stat) => (
+              <motion.div key={stat.label} variants={fadeUp} className="bg-card rounded-lg p-8 text-center shadow-sm border border-border">
+                <p className="font-display text-3xl font-bold text-accent mb-2">{stat.value}</p>
+                <p className="text-muted-foreground text-sm">{stat.label}</p>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-16 bg-primary">
         <div className="container mx-auto px-4 text-center">
