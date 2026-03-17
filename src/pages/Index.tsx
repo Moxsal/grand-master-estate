@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, Shield, Home, TrendingUp, Users, Star, ChevronRight, Building2 } from "lucide-react";
+import { ArrowRight, Shield, Home, TrendingUp, Users, Star, ChevronRight, Building2, BadgeCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -285,10 +285,11 @@ const Index = () => {
           >
             {[
               { icon: Shield, title: "Trusted & Verified", desc: "All properties are verified and legally documented. RC: 3497825." },
-              { icon: Home, title: "500+ Properties", desc: "Access to an extensive portfolio of premium properties across Nigeria's top locations." },
+              { icon: Home, title: "300+ Properties", desc: "Access to an extensive portfolio of premium properties across Nigeria's top locations." },
               { icon: TrendingUp, title: "Investment Guidance", desc: "Expert advice on high-yield property investments and market trends." },
-              { icon: Building2, title: "Property Management Expertise", desc: "Currently managing over 6,000+ properties across Nigeria with professional maintenance, tenant coordination, and long-term value growth." },
+              { icon: Building2, title: "Property Management Expertise", desc: "Currently managing over 6,000+ properties across Nigeria, including maintenance, tenant coordination, and long-term investment support." },
               { icon: Users, title: "Dedicated Support", desc: "Personalized service from consultation to closing and beyond." },
+              { icon: BadgeCheck, title: "Full Refund Guarantee", desc: "We operate with full transparency and integrity. In the event of any verified issues such as poor building construction, non-distress sales, property location disputes, or any form of improper dealings, we offer a 100% full refund of all funds paid by the client." },
             ].map((item) => (
               <motion.div
                 key={item.title}
